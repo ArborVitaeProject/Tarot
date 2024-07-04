@@ -1,0 +1,21 @@
+<?xml version="1.0" standalone="yes"?>
+<OrphalesePackData>
+  <tblPackInfo>
+    <PackName>Universal Waite</PackName>
+    <Publisher>U.S. Games Systems</Publisher>
+    <Author>A.E. Waite and Pamela Colman Smith</Author>
+    <NoCards>78</NoCards>
+    <Description>This is a recolored version of the Rider Waite deck. Drawings by Pamela Colman Smith. Coloring by Mary Hanson-Roberts. Conceived by Stuart R. Kaplan</Description>
+    <TransparentRegions>0</TransparentRegions>
+    <CurveFactor>5</CurveFactor>
+    <URL>http://www.usgamessystems.com</URL>
+    <Copyright>1990 U.S. Games Systems</Copyright>
+    <ApplyPercentage>false</ApplyPercentage>
+    <PercentReversed>0</PercentReversed>
+    <DeckHeight>-1</DeckHeight>
+    <SpecificBackground>false</SpecificBackground>
+    <BackgroundFormColor>-16777216</BackgroundFormColor>
+    <BackgroundImagePosition>Center</BackgroundImagePosition>
+    <BackOfCard />
+  </tblPackInfo>
+</OrphalesePackData>
