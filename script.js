@@ -3,9 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const modal = document.querySelector(".modal");
     const modalContent = document.querySelector(".modal-content");
     const closeModal = document.querySelector(".close");
-    const searchButton = document.getElementById("searchButton");
+    const backToTopButton = document.getElementById("back-to-top");
+    const menuToggles = document.querySelectorAll(".menu-toggle");
+    const submenus = document.querySelectorAll(".submenu");
+    const suitMenus = document.querySelectorAll(".suit-menu");
 
-    // Event listener for card images to open modal
+    // Modal functionality
     cardImages.forEach(image => {
         image.addEventListener("click", function() {
             modal.style.display = "flex";
@@ -16,46 +19,81 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Event listener to close modal
     closeModal.addEventListener("click", function() {
         modal.style.display = "none";
     });
 
-    // Event listener to close modal when clicking outside of it
     window.addEventListener("click", function(event) {
         if (event.target === modal) {
             modal.style.display = "none";
         }
     });
 
-    // Add event listener for the search button
-    searchButton.addEventListener("click", filterCards);
-});
-
-// Search function
-function filterCards() {
-    const searchBar = document.getElementById("searchBar");
-    const filter = searchBar.value.toUpperCase();
-    const cardList = document.getElementById("cardList");
-    const cards = cardList.getElementsByClassName("card-item");
-
-    let firstMatch = null;
-
-    for (let i = 0; i < cards.length; i++) {
-        const card = cards[i];
-        const cardText = card.textContent || card.innerText;
-        if (cardText.toUpperCase().indexOf(filter) > -1) {
-            card.style.display = "";
-            if (!firstMatch) {
-                firstMatch = card;
-            }
+    // Back to Top functionality
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = "block";
         } else {
-            card.style.display = "none";
+            backToTopButton.style.display = "none";
         }
-    }
+    });
 
-    // Scroll to the first matching card
-    if (firstMatch) {
-        firstMatch.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-}
+    backToTopButton.addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Menu toggle functionality
+    menuToggles.forEach(toggle => {
+        toggle.addEventListener("click", function(e) {
+            e.preventDefault();
+            const submenu = this.nextElementSibling;
+            submenus.forEach(sm => {
+                if (sm !== submenu) {
+                    sm.style.display = "none";
+                }
+            });
+            submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+        });
+    });
+
+    // Smooth scroll and display suit menu functionality
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            window.scrollTo({
+                top: targetElement.offsetTop - 60,  // Adding a buffer to the scroll position
+                behavior: "smooth"
+            });
+            // Show the relevant suit menu if navigating to a main suit section
+            suitMenus.forEach(sm => {
+                if (sm.id === `${targetId}-menu`) {
+                    sm.style.display = "block"; // Changed to block for vertical layout
+                } else {
+                    sm.style.display = "none";
+                }
+            });
+        });
+    });
+
+    // Add scroll buffer for specific suit items
+    const suitLinks = document.querySelectorAll('.suit-menu a');
+    suitLinks.forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            window.scrollTo({
+                top: targetElement.offsetTop - 60,  // Adding a buffer to the scroll position
+                behavior: "smooth"
+            });
+        });
+    });
+
+    // Hide suit menus initially
+    suitMenus.forEach(menu => {
+        menu.style.display = "none";
+    });
+});
