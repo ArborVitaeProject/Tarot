@@ -13,7 +13,7 @@ body {
     padding: 20px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
     margin-bottom: 20px;
 }
@@ -28,6 +28,94 @@ ul {
     margin-bottom: 20px;
 }
 
+header {
+    background: #333;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background: #2E8B57;
+    border-radius: 5px;
+}
+
+nav ul li ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #444;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+nav ul li ul.submenu li {
+    margin: 0;
+}
+
+nav ul li ul.submenu li a {
+    padding: 5px 10px;
+    border-bottom: 1px solid #555;
+}
+
+nav ul li ul.submenu li a:hover, nav ul li ul.submenu li a:focus {
+    background: #2E8B57;
+    border-radius: 3px;
+}
+
+nav ul li ul.submenu li:last-child a {
+    border-bottom: none;
+}
+
+/* Suit menus */
+.suit-menu {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.suit-menu ul {
+    display: block;
+    padding: 0;
+    text-align: center;
+}
+
+.suit-menu ul li {
+    margin: 10px 0;
+}
+
+.suit-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    background: #444;
+    border-radius: 5px;
+}
+
+.suit-menu ul li a:hover, .suit-menu ul li a:focus {
+    background: #2E8B57;
+}
+
+/* Card styles */
 .card-item {
     display: flex;
     align-items: center;
@@ -70,44 +158,25 @@ ul {
     color: #2E8B57;
 }
 
-.tooltip {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    color: #2E8B57;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 220px;
-    background-color: #333;
+/* Back to Top Button */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2E8B57;
     color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; /* Position the tooltip above the text */
-    left: 50%;
-    margin-left: -110px; /* Use half of the width to center the tooltip */
-    opacity: 0;
-    transition: opacity 0.3s;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #333 transparent transparent transparent;
+#back-to-top:hover {
+    background-color: #1e5940;
+    transform: scale(1.1);
 }
 
 /* Modal styles */
@@ -123,7 +192,7 @@ ul {
     background-color: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(5px); /* Blur the background */
+    backdrop-filter: blur(5px);
     transition: opacity 0.3s ease-in-out;
 }
 
@@ -134,7 +203,7 @@ ul {
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
-    position: relative; /* To position the close button */
+    position: relative;
 }
 
 .modal-content img {
@@ -157,33 +226,4 @@ ul {
     color: #aaa;
     text-decoration: none;
     cursor: pointer;
-}
-
-/* Search bar and button styles */
-.search-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-#searchBar {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #888;
-    border-radius: 5px 0 0 5px;
-}
-
-#searchButton {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #888;
-    border-radius: 0 5px 5px 0;
-    background-color: #2E8B57;
-    color: white;
-    cursor: pointer;
-}
-
-#searchButton:hover {
-    background-color: #3CB371;
 }
