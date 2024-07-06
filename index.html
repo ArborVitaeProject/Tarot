@@ -7,20 +7,112 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Tarot Cards and Astrological Associations</h1>
-
-    <!-- Header with collapsible menus -->
     <header>
+        <h1>Tarot Cards and Astrological Associations</h1>
         <nav>
-            <ul>
+            <button class="menu-toggle">Tarot Suits</button>
+            <ul class="menu">
                 <li>
-                    <a href="#" class="menu-toggle">Tarot Suits</a>
+                    <a href="#" class="submenu-toggle">Major Arcana</a>
                     <ul class="submenu">
-                        <li><a href="#major-arcana" class="menu-toggle">Major Arcana</a></li>
-                        <li><a href="#wands" class="menu-toggle">Wands (Fire)</a></li>
-                        <li><a href="#cups" class="menu-toggle">Cups (Water)</a></li>
-                        <li><a href="#swords" class="menu-toggle">Swords (Air)</a></li>
-                        <li><a href="#pentacles" class="menu-toggle">Pentacles (Earth)</a></li>
+                        <li><a href="#fool">The Fool (Uranus)</a></li>
+                        <li><a href="#magician">The Magician (Mercury)</a></li>
+                        <li><a href="#high-priestess">The High Priestess (Moon)</a></li>
+                        <li><a href="#empress">The Empress (Venus)</a></li>
+                        <li><a href="#emperor">The Emperor (Aries)</a></li>
+                        <li><a href="#hierophant">The Hierophant (Taurus)</a></li>
+                        <li><a href="#lovers">The Lovers (Gemini)</a></li>
+                        <li><a href="#chariot">The Chariot (Cancer)</a></li>
+                        <li><a href="#strength">Strength (Leo)</a></li>
+                        <li><a href="#hermit">The Hermit (Virgo)</a></li>
+                        <li><a href="#wheel-of-fortune">Wheel of Fortune (Jupiter)</a></li>
+                        <li><a href="#justice">Justice (Libra)</a></li>
+                        <li><a href="#hanged-man">The Hanged Man (Neptune)</a></li>
+                        <li><a href="#death">Death (Scorpio)</a></li>
+                        <li><a href="#temperance">Temperance (Sagittarius)</a></li>
+                        <li><a href="#devil">The Devil (Capricorn)</a></li>
+                        <li><a href="#tower">The Tower (Mars)</a></li>
+                        <li><a href="#star">The Star (Aquarius)</a></li>
+                        <li><a href="#moon">The Moon (Pisces)</a></li>
+                        <li><a href="#sun">The Sun (Sun)</a></li>
+                        <li><a href="#judgement">Judgement (Pluto)</a></li>
+                        <li><a href="#world">The World (Saturn)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="submenu-toggle">Wands (Fire)</a>
+                    <ul class="submenu">
+                        <li><a href="#ace-of-wands">Ace of Wands</a></li>
+                        <li><a href="#two-of-wands">Two of Wands (Mars in Aries)</a></li>
+                        <li><a href="#three-of-wands">Three of Wands (Sun in Aries)</a></li>
+                        <li><a href="#four-of-wands">Four of Wands (Venus in Aries)</a></li>
+                        <li><a href="#five-of-wands">Five of Wands (Saturn in Leo)</a></li>
+                        <li><a href="#six-of-wands">Six of Wands (Jupiter in Leo)</a></li>
+                        <li><a href="#seven-of-wands">Seven of Wands (Mars in Leo)</a></li>
+                        <li><a href="#eight-of-wands">Eight of Wands (Mercury in Sagittarius)</a></li>
+                        <li><a href="#nine-of-wands">Nine of Wands (Moon in Sagittarius)</a></li>
+                        <li><a href="#ten-of-wands">Ten of Wands (Saturn in Sagittarius)</a></li>
+                        <li><a href="#page-of-wands">Page of Wands (Earth of Fire)</a></li>
+                        <li><a href="#knight-of-wands">Knight of Wands (Air of Fire)</a></li>
+                        <li><a href="#queen-of-wands">Queen of Wands (Water of Fire)</a></li>
+                        <li><a href="#king-of-wands">King of Wands (Fire of Fire)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="submenu-toggle">Cups (Water)</a>
+                    <ul class="submenu">
+                        <li><a href="#ace-of-cups">Ace of Cups</a></li>
+                        <li><a href="#two-of-cups">Two of Cups (Venus in Cancer)</a></li>
+                        <li><a href="#three-of-cups">Three of Cups (Mercury in Cancer)</a></li>
+                        <li><a href="#four-of-cups">Four of Cups (Moon in Cancer)</a></li>
+                        <li><a href="#five-of-cups">Five of Cups (Mars in Scorpio)</a></li>
+                        <li><a href="#six-of-cups">Six of Cups (Sun in Scorpio)</a></li>
+                        <li><a href="#seven-of-cups">Seven of Cups (Venus in Scorpio)</a></li>
+                        <li><a href="#eight-of-cups">Eight of Cups (Saturn in Pisces)</a></li>
+                        <li><a href="#nine-of-cups">Nine of Cups (Jupiter in Pisces)</a></li>
+                        <li><a href="#ten-of-cups">Ten of Cups (Mars in Pisces)</a></li>
+                        <li><a href="#page-of-cups">Page of Cups (Earth of Water)</a></li>
+                        <li><a href="#knight-of-cups">Knight of Cups (Air of Water)</a></li>
+                        <li><a href="#queen-of-cups">Queen of Cups (Water of Water)</a></li>
+                        <li><a href="#king-of-cups">King of Cups (Fire of Water)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="submenu-toggle">Swords (Air)</a>
+                    <ul class="submenu">
+                        <li><a href="#ace-of-swords">Ace of Swords</a></li>
+                        <li><a href="#two-of-swords">Two of Swords (Moon in Libra)</a></li>
+                        <li><a href="#three-of-swords">Three of Swords (Saturn in Libra)</a></li>
+                        <li><a href="#four-of-swords">Four of Swords (Jupiter in Libra)</a></li>
+                        <li><a href="#five-of-swords">Five of Swords (Venus in Aquarius)</a></li>
+                        <li><a href="#six-of-swords">Six of Swords (Mercury in Aquarius)</a></li>
+                        <li><a href="#seven-of-swords">Seven of Swords (Moon in Aquarius)</a></li>
+                        <li><a href="#eight-of-swords">Eight of Swords (Jupiter in Gemini)</a></li>
+                        <li><a href="#nine-of-swords">Nine of Swords (Mars in Gemini)</a></li>
+                        <li><a href="#ten-of-swords">Ten of Swords (Sun in Gemini)</a></li>
+                        <li><a href="#page-of-swords">Page of Swords (Earth of Air)</a></li>
+                        <li><a href="#knight-of-swords">Knight of Swords (Air of Air)</a></li>
+                        <li><a href="#queen-of-swords">Queen of Swords (Water of Air)</a></li>
+                        <li><a href="#king-of-swords">King of Swords (Fire of Air)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="submenu-toggle">Pentacles (Earth)</a>
+                    <ul class="submenu">
+                        <li><a href="#ace-of-pentacles">Ace of Pentacles</a></li>
+                        <li><a href="#two-of-pentacles">Two of Pentacles (Jupiter in Capricorn)</a></li>
+                        <li><a href="#three-of-pentacles">Three of Pentacles (Mars in Capricorn)</a></li>
+                        <li><a href="#four-of-pentacles">Four of Pentacles (Sun in Capricorn)</a></li>
+                        <li><a href="#five-of-pentacles">Five of Pentacles (Mercury in Taurus)</a></li>
+                        <li><a href="#six-of-pentacles">Six of Pentacles (Moon in Taurus)</a></li>
+                        <li><a href="#seven-of-pentacles">Seven of Pentacles (Saturn in Taurus)</a></li>
+                        <li><a href="#eight-of-pentacles">Eight of Pentacles (Sun in Virgo)</a></li>
+                        <li><a href="#nine-of-pentacles">Nine of Pentacles (Venus in Virgo)</a></li>
+                        <li><a href="#ten-of-pentacles">Ten of Pentacles (Mercury in Virgo)</a></li>
+                        <li><a href="#page-of-pentacles">Page of Pentacles (Earth of Earth)</a></li>
+                        <li><a href="#knight-of-pentacles">Knight of Pentacles (Air of Earth)</a></li>
+                        <li><a href="#queen-of-pentacles">Queen of Pentacles (Water of Earth)</a></li>
+                        <li><a href="#king-of-pentacles">King of Pentacles (Fire of Earth)</a></li>
                     </ul>
                 </li>
             </ul>
@@ -31,1313 +123,418 @@
     <div id="cards-container">
         <!-- Major Arcana -->
         <h2 id="major-arcana">Major Arcana</h2>
-        <div class="suit-menu" id="major-arcana-menu">
-            <ul>
-                <li><a href="#fool">The Fool (Uranus)</a></li>
-                <li><a href="#magician">The Magician (Mercury)</a></li>
-                <li><a href="#high-priestess">The High Priestess (Moon)</a></li>
-                <li><a href="#empress">The Empress (Venus)</a></li>
-                <li><a href="#emperor">The Emperor (Aries)</a></li>
-                <li><a href="#hierophant">The Hierophant (Taurus)</a></li>
-                <li><a href="#lovers">The Lovers (Gemini)</a></li>
-                <li><a href="#chariot">The Chariot (Cancer)</a></li>
-                <li><a href="#strength">Strength (Leo)</a></li>
-                <li><a href="#hermit">The Hermit (Virgo)</a></li>
-                <li><a href="#wheel-of-fortune">Wheel of Fortune (Jupiter)</a></li>
-                <li><a href="#justice">Justice (Libra)</a></li>
-                <li><a href="#hanged-man">The Hanged Man (Neptune)</a></li>
-                <li><a href="#death">Death (Scorpio)</a></li>
-                <li><a href="#temperance">Temperance (Sagittarius)</a></li>
-                <li><a href="#devil">The Devil (Capricorn)</a></li>
-                <li><a href="#tower">The Tower (Mars)</a></li>
-                <li><a href="#star">The Star (Aquarius)</a></li>
-                <li><a href="#moon">The Moon (Pisces)</a></li>
-                <li><a href="#sun">The Sun (Sun)</a></li>
-                <li><a href="#judgement">Judgement (Pluto)</a></li>
-                <li><a href="#world">The World (Saturn)</a></li>
-            </ul>
-        </div>
-
-        <h3 id="fool">The Fool</h3>
-        <ul>
-            <li class="card-item">
+        <div class="card-section">
+            <div class="card" id="fool">
+                <h3>The Fool</h3>
                 <img src="images/00.png" alt="The Fool">
-                <div>
-                    <strong>The Fool</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Represents new beginnings, spontaneity, and taking risks.</p>
-                        <p><strong>Astrological Interpretation:</strong> Guided by Uranus, symbolizing sudden change and the unconventional.</p>
-                        <p><strong>Combined Interpretation:</strong> The Fool, under Uranus, urges you to embrace new beginnings with spontaneity and take risks for unconventional outcomes.</p>
-                        <p><strong>Hebrew Letter:</strong> Aleph (א) - Symbol of beginnings and the infinite.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="magician">The Magician</h3>
-        <ul>
-            <li class="card-item">
+                <p>Uranus</p>
+            </div>
+            <div class="card" id="magician">
+                <h3>The Magician</h3>
                 <img src="images/01.png" alt="The Magician">
-                <div>
-                    <strong>The Magician</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes manifestation, resourcefulness, and power.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mercury, representing communication and intellect.</p>
-                        <p><strong>Combined Interpretation:</strong> The Magician, under Mercury, urges you to use your skills and intellect to manifest your desires.</p>
-                        <p><strong>Hebrew Letter:</strong> Beth (ב) - Symbol of the house and the temple.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="high-priestess">The High Priestess</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mercury</p>
+            </div>
+            <div class="card" id="high-priestess">
+                <h3>The High Priestess</h3>
                 <img src="images/02.png" alt="The High Priestess">
-                <div>
-                    <strong>The High Priestess</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Represents intuition, wisdom, and mystery.</p>
-                        <p><strong>Astrological Interpretation:</strong> Guided by the Moon, symbolizing intuition and subconscious.</p>
-                        <p><strong>Combined Interpretation:</strong> The High Priestess, under the Moon, encourages you to trust your intuition and explore the mysteries within.</p>
-                        <p><strong>Hebrew Letter:</strong> Gimel (ג) - Symbol of the camel, representing the ability to travel within.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="empress">The Empress</h3>
-        <ul>
-            <li class="card-item">
+                <p>Moon</p>
+            </div>
+            <div class="card" id="empress">
+                <h3>The Empress</h3>
                 <img src="images/03.png" alt="The Empress">
-                <div>
-                    <strong>The Empress</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes femininity, beauty, nature, and abundance.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Venus, representing love, beauty, and fertility.</p>
-                        <p><strong>Combined Interpretation:</strong> The Empress, under Venus, encourages you to embrace your femininity and the beauty of nature and abundance.</p>
-                        <p><strong>Hebrew Letter:</strong> Daleth (ד) - Symbol of the door, representing a passage or transition.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="emperor">The Emperor</h3>
-        <ul>
-            <li class="card-item">
+                <p>Venus</p>
+            </div>
+            <div class="card" id="emperor">
+                <h3>The Emperor</h3>
                 <img src="images/04.png" alt="The Emperor">
-                <div>
-                    <strong>The Emperor</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Represents authority, structure, control, and fatherhood.</p>
-                        <p><strong>Astrological Interpretation:</strong> Guided by Aries, symbolizing leadership and assertiveness.</p>
-                        <p><strong>Combined Interpretation:</strong> The Emperor, under Aries, urges you to take control and lead with authority and structure.</p>
-                        <p><strong>Hebrew Letter:</strong> Heh (ה) - Symbol of window, representing a view or vision.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="hierophant">The Hierophant</h3>
-        <ul>
-            <li class="card-item">
+                <p>Aries</p>
+            </div>
+            <div class="card" id="hierophant">
+                <h3>The Hierophant</h3>
                 <img src="images/05.png" alt="The Hierophant">
-                <div>
-                    <strong>The Hierophant</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes tradition, conformity, morality, and ethics.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Taurus, representing stability and reliability.</p>
-                        <p><strong>Combined Interpretation:</strong> The Hierophant, under Taurus, encourages you to follow tradition and seek stability in your actions and beliefs.</p>
-                        <p><strong>Hebrew Letter:</strong> Vav (ו) - Symbol of nail, representing connection or joining.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="lovers">The Lovers</h3>
-        <ul>
-            <li class="card-item">
+                <p>Taurus</p>
+            </div>
+            <div class="card" id="lovers">
+                <h3>The Lovers</h3>
                 <img src="images/06.png" alt="The Lovers">
-                <div>
-                    <strong>The Lovers</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Represents love, harmony, relationships, and choices.</p>
-                        <p><strong>Astrological Interpretation:</strong> Guided by Gemini, symbolizing communication and duality.</p>
-                        <p><strong>Combined Interpretation:</strong> The Lovers, under Gemini, urges you to seek harmony in relationships and make choices that reflect your true desires.</p>
-                        <p><strong>Hebrew Letter:</strong> Zayin (ז) - Symbol of sword, representing a tool for decision and discernment.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="chariot">The Chariot</h3>
-        <ul>
-            <li class="card-item">
+                <p>Gemini</p>
+            </div>
+            <div class="card" id="chariot">
+                <h3>The Chariot</h3>
                 <img src="images/07.png" alt="The Chariot">
-                <div>
-                    <strong>The Chariot</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes determination, willpower, and control.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Cancer, representing emotions and the home.</p>
-                        <p><strong>Combined Interpretation:</strong> The Chariot, under Cancer, urges you to harness your emotions and willpower to achieve your goals.</p>
-                        <p><strong>Hebrew Letter:</strong> Cheth (ח) - Symbol of fence, representing protection and separation.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="strength">Strength</h3>
-        <ul>
-            <li class="card-item">
+                <p>Cancer</p>
+            </div>
+            <div class="card" id="strength">
+                <h3>Strength</h3>
                 <img src="images/08.png" alt="Strength">
-                <div>
-                    <strong>Strength</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Represents courage, patience, and inner strength.</p>
-                        <p><strong>Astrological Interpretation:</strong> Guided by Leo, symbolizing pride and determination.</p>
-                        <p><strong>Combined Interpretation:</strong> Strength, under Leo, urges you to find courage within and face challenges with patience and determination.</p>
-                        <p><strong>Hebrew Letter:</strong> Teth (ט) - Symbol of snake, representing power and transformation.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="hermit">The Hermit</h3>
-        <ul>
-            <li class="card-item">
+                <p>Leo</p>
+            </div>
+            <div class="card" id="hermit">
+                <h3>The Hermit</h3>
                 <img src="images/09.png" alt="The Hermit">
-                <div>
-                    <strong>The Hermit</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes introspection, solitude, and inner guidance.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Virgo, representing analysis and introspection.</p>
-                        <p><strong>Combined Interpretation:</strong> The Hermit, under Virgo, encourages you to seek wisdom and guidance within through introspection.</p>
-                        <p><strong>Hebrew Letter:</strong> Yod (י) - Symbol of hand, representing action and purpose.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="wheel-of-fortune">Wheel of Fortune</h3>
-        <ul>
-            <li class="card-item">
+                <p>Virgo</p>
+            </div>
+            <div class="card" id="wheel-of-fortune">
+                <h3>Wheel of Fortune</h3>
                 <img src="images/10.png" alt="Wheel of Fortune">
-                <div>
-                    <strong>Wheel of Fortune</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Represents change, cycles, and fate.</p>
-                        <p><strong>Astrological Interpretation:</strong> Guided by Jupiter, symbolizing expansion and growth.</p>
-                        <p><strong>Combined Interpretation:</strong> Wheel of Fortune, under Jupiter, urges you to embrace change and understand the cycles of life.</p>
-                        <p><strong>Hebrew Letter:</strong> Kaph (כ) - Symbol of palm, representing grasp and power.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="justice">Justice</h3>
-        <ul>
-            <li class="card-item">
+                <p>Jupiter</p>
+            </div>
+            <div class="card" id="justice">
+                <h3>Justice</h3>
                 <img src="images/11.png" alt="Justice">
-                <div>
-                    <strong>Justice</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes fairness, truth, and law.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Libra, representing balance and harmony.</p>
-                        <p><strong>Combined Interpretation:</strong> Justice, under Libra, urges you to seek truth and fairness in all actions.</p>
-                        <p><strong>Hebrew Letter:</strong> Lamed (ל) - Symbol of ox-goad, representing learning and teaching.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="hanged-man">The Hanged Man</h3>
-        <ul>
-            <li class="card-item">
+                <p>Libra</p>
+            </div>
+            <div class="card" id="hanged-man">
+                <h3>The Hanged Man</h3>
                 <img src="images/12.png" alt="The Hanged Man">
-                <div>
-                    <strong>The Hanged Man</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Represents suspension, restriction, and letting go.</p>
-                        <p><strong>Astrological Interpretation:</strong> Guided by Neptune, symbolizing spirituality and sacrifice.</p>
-                        <p><strong>Combined Interpretation:</strong> The Hanged Man, under Neptune, urges you to embrace new perspectives and let go of old patterns.</p>
-                        <p><strong>Hebrew Letter:</strong> Mem (מ) - Symbol of water, representing fluidity and change.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="death">Death</h3>
-        <ul>
-            <li class="card-item">
+                <p>Neptune</p>
+            </div>
+            <div class="card" id="death">
+                <h3>Death</h3>
                 <img src="images/13.png" alt="Death">
-                <div>
-                    <strong>Death</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes transformation, endings, and new beginnings.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Scorpio, representing transformation and rebirth.</p>
-                        <p><strong>Combined Interpretation:</strong> Death, under Scorpio, urges you to embrace transformation and the cycle of life and death.</p>
-                        <p><strong>Hebrew Letter:</strong> Nun (נ) - Symbol of fish, representing life and activity.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="temperance">Temperance</h3>
-        <ul>
-            <li class="card-item">
+                <p>Scorpio</p>
+            </div>
+            <div class="card" id="temperance">
+                <h3>Temperance</h3>
                 <img src="images/14.png" alt="Temperance">
-                <div>
-                    <strong>Temperance</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Represents balance, moderation, and patience.</p>
-                        <p><strong>Astrological Interpretation:</strong> Guided by Sagittarius, symbolizing adventure and philosophy.</p>
-                        <p><strong>Combined Interpretation:</strong> Temperance, under Sagittarius, urges you to find balance and harmony in all aspects of life.</p>
-                        <p><strong>Hebrew Letter:</strong> Samekh (ס) - Symbol of prop, representing support and guidance.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="devil">The Devil</h3>
-        <ul>
-            <li class="card-item">
+                <p>Sagittarius</p>
+            </div>
+            <div class="card" id="devil">
+                <h3>The Devil</h3>
                 <img src="images/15.png" alt="The Devil">
-                <div>
-                    <strong>The Devil</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes temptation, addiction, and materialism.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Capricorn, representing ambition and control.</p>
-                        <p><strong>Combined Interpretation:</strong> The Devil, under Capricorn, urges you to recognize and overcome temptations and materialistic desires.</p>
-                        <p><strong>Hebrew Letter:</strong> Ayin (ע) - Symbol of eye, representing perception and awareness.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="tower">The Tower</h3>
-        <ul>
-            <li class="card-item">
+                <p>Capricorn</p>
+            </div>
+            <div class="card" id="tower">
+                <h3>The Tower</h3>
                 <img src="images/16.png" alt="The Tower">
-                <div>
-                    <strong>The Tower</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Represents upheaval, sudden change, and revelation.</p>
-                        <p><strong>Astrological Interpretation:</strong> Guided by Mars, symbolizing conflict and energy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Tower, under Mars, urges you to embrace change and allow old structures to fall for new growth.</p>
-                        <p><strong>Hebrew Letter:</strong> Pe (פ) - Symbol of mouth, representing expression and communication.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="star">The Star</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mars</p>
+            </div>
+            <div class="card" id="star">
+                <h3>The Star</h3>
                 <img src="images/17.png" alt="The Star">
-                <div>
-                    <strong>The Star</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes hope, inspiration, and serenity.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Aquarius, representing innovation and progress.</p>
-                        <p><strong>Combined Interpretation:</strong> The Star, under Aquarius, urges you to find inspiration and hope in the midst of challenges.</p>
-                        <p><strong>Hebrew Letter:</strong> Tzaddi (צ) - Symbol of fishhook, representing capture and seeking.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="moon">The Moon</h3>
-        <ul>
-            <li class="card-item">
+                <p>Aquarius</p>
+            </div>
+            <div class="card" id="moon">
+                <h3>The Moon</h3>
                 <img src="images/18.png" alt="The Moon">
-                <div>
-                    <strong>The Moon</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Represents illusion, intuition, and the unconscious.</p>
-                        <p><strong>Astrological Interpretation:</strong> Guided by Pisces, symbolizing dreams and intuition.</p>
-                        <p><strong>Combined Interpretation:</strong> The Moon, under Pisces, encourages you to explore your unconscious and trust your intuition.</p>
-                        <p><strong>Hebrew Letter:</strong> Qoph (ק) - Symbol of back of head, representing subconscious and mystery.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="sun">The Sun</h3>
-        <ul>
-            <li class="card-item">
+                <p>Pisces</p>
+            </div>
+            <div class="card" id="sun">
+                <h3>The Sun</h3>
                 <img src="images/19.png" alt="The Sun">
-                <div>
-                    <strong>The Sun</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes positivity, success, and vitality.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the Sun, representing life force and energy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Sun, urges you to embrace positivity and vitality in your life.</p>
-                        <p><strong>Hebrew Letter:</strong> Resh (ר) - Symbol of head, representing leadership and focus.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="judgement">Judgement</h3>
-        <ul>
-            <li class="card-item">
+                <p>Sun</p>
+            </div>
+            <div class="card" id="judgement">
+                <h3>Judgement</h3>
                 <img src="images/20.png" alt="Judgement">
-                <div>
-                    <strong>Judgement</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Represents rebirth, evaluation, and awakening.</p>
-                        <p><strong>Astrological Interpretation:</strong> Guided by Pluto, symbolizing transformation and renewal.</p>
-                        <p><strong>Combined Interpretation:</strong> Judgement, under Pluto, urges you to evaluate your life and embrace transformation and renewal.</p>
-                        <p><strong>Hebrew Letter:</strong> Shin (ש) - Symbol of tooth, representing consumption and transformation.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="world">The World</h3>
-        <ul>
-            <li class="card-item">
+                <p>Pluto</p>
+            </div>
+            <div class="card" id="world">
+                <h3>The World</h3>
                 <img src="images/21.png" alt="The World">
-                <div>
-                    <strong>The World</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes completion, integration, and accomplishment.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Saturn, representing discipline and structure.</p>
-                        <p><strong>Combined Interpretation:</strong> The World, under Saturn, urges you to embrace completion and integration in your journey.</p>
-                        <p><strong>Hebrew Letter:</strong> Tav (ת) - Symbol of cross, representing truth and perfection.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
+                <p>Saturn</p>
+            </div>
+        </div>
 
         <!-- Wands -->
-        <h2 id="wands">Wands</h2>
-        <div class="suit-menu" id="wands-menu">
-            <ul>
-                <li><a href="#ace-of-wands">Ace of Wands</a></li>
-                <li><a href="#two-of-wands">Two of Wands (Mars in Aries)</a></li>
-                <li><a href="#three-of-wands">Three of Wands (Sun in Aries)</a></li>
-                <li><a href="#four-of-wands">Four of Wands (Venus in Aries)</a></li>
-                <li><a href="#five-of-wands">Five of Wands (Saturn in Leo)</a></li>
-                <li><a href="#six-of-wands">Six of Wands (Jupiter in Leo)</a></li>
-                <li><a href="#seven-of-wands">Seven of Wands (Mars in Leo)</a></li>
-                <li><a href="#eight-of-wands">Eight of Wands (Mercury in Sagittarius)</a></li>
-                <li><a href="#nine-of-wands">Nine of Wands (Moon in Sagittarius)</a></li>
-                <li><a href="#ten-of-wands">Ten of Wands (Saturn in Sagittarius)</a></li>
-                <li><a href="#page-of-wands">Page of Wands (Earth of Fire)</a></li>
-                <li><a href="#knight-of-wands">Knight of Wands (Air of Fire)</a></li>
-                <li><a href="#queen-of-wands">Queen of Wands (Water of Fire)</a></li>
-                <li><a href="#king-of-wands">King of Wands (Fire of Fire)</a></li>
-            </ul>
-        </div>
-
-        <!-- Wands Cards -->
-        <h3 id="ace-of-wands">Ace of Wands</h3>
-        <ul>
-            <li class="card-item">
+        <h2 id="wands">Wands (Fire)</h2>
+        <div class="card-section">
+            <div class="card" id="ace-of-wands">
+                <h3>Ace of Wands</h3>
                 <img src="images/22.png" alt="Ace of Wands">
-                <div>
-                    <strong>Ace of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes inspiration, power, and new beginnings.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the element of Fire, representing energy, passion, and creativity.</p>
-                        <p><strong>Combined Interpretation:</strong> The Ace of Wands, aligned with Fire, ignites inspiration and creativity, encouraging you to embrace new beginnings with power and passion.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="two-of-wands">Two of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Fire</p>
+            </div>
+            <div class="card" id="two-of-wands">
+                <h3>Two of Wands</h3>
                 <img src="images/23.png" alt="Two of Wands">
-                <div>
-                    <strong>Two of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes planning, decision-making, and progress.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mars in Aries, representing assertiveness and initiative.</p>
-                        <p><strong>Combined Interpretation:</strong> The Two of Wands, aligned with Mars in Aries, urges you to take initiative and make decisions to move forward.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="three-of-wands">Three of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mars in Aries</p>
+            </div>
+            <div class="card" id="three-of-wands">
+                <h3>Three of Wands</h3>
                 <img src="images/24.png" alt="Three of Wands">
-                <div>
-                    <strong>Three of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes expansion, foresight, and exploration.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the Sun in Aries, representing vision and leadership.</p>
-                        <p><strong>Combined Interpretation:</strong> The Three of Wands, aligned with the Sun in Aries, urges you to explore new opportunities and expand your horizons.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="four-of-wands">Four of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Sun in Aries</p>
+            </div>
+            <div class="card" id="four-of-wands">
+                <h3>Four of Wands</h3>
                 <img src="images/25.png" alt="Four of Wands">
-                <div>
-                    <strong>Four of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes celebration, harmony, and stability.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Venus in Aries, representing love and creativity.</p>
-                        <p><strong>Combined Interpretation:</strong> The Four of Wands, aligned with Venus in Aries, urges you to celebrate achievements and enjoy harmony in your relationships.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="five-of-wands">Five of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Venus in Aries</p>
+            </div>
+            <div class="card" id="five-of-wands">
+                <h3>Five of Wands</h3>
                 <img src="images/26.png" alt="Five of Wands">
-                <div>
-                    <strong>Five of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes conflict, competition, and struggle.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Saturn in Leo, representing challenges and restrictions.</p>
-                        <p><strong>Combined Interpretation:</strong> The Five of Wands, aligned with Saturn in Leo, urges you to face challenges and competition with determination.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="six-of-wands">Six of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Saturn in Leo</p>
+            </div>
+            <div class="card" id="six-of-wands">
+                <h3>Six of Wands</h3>
                 <img src="images/27.png" alt="Six of Wands">
-                <div>
-                    <strong>Six of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes victory, success, and recognition.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Jupiter in Leo, representing confidence and growth.</p>
-                        <p><strong>Combined Interpretation:</strong> The Six of Wands, aligned with Jupiter in Leo, urges you to embrace success and recognition with confidence.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="seven-of-wands">Seven of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Jupiter in Leo</p>
+            </div>
+            <div class="card" id="seven-of-wands">
+                <h3>Seven of Wands</h3>
                 <img src="images/28.png" alt="Seven of Wands">
-                <div>
-                    <strong>Seven of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes perseverance, defense, and resilience.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mars in Leo, representing courage and determination.</p>
-                        <p><strong>Combined Interpretation:</strong> The Seven of Wands, aligned with Mars in Leo, urges you to stand your ground and persevere through challenges.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="eight-of-wands">Eight of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mars in Leo</p>
+            </div>
+            <div class="card" id="eight-of-wands">
+                <h3>Eight of Wands</h3>
                 <img src="images/29.png" alt="Eight of Wands">
-                <div>
-                    <strong>Eight of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes rapid movement, progress, and communication.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mercury in Sagittarius, representing swiftness and expansion.</p>
-                        <p><strong>Combined Interpretation:</strong> The Eight of Wands, aligned with Mercury in Sagittarius, urges you to embrace rapid progress and communicate effectively.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="nine-of-wands">Nine of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mercury in Sagittarius</p>
+            </div>
+            <div class="card" id="nine-of-wands">
+                <h3>Nine of Wands</h3>
                 <img src="images/30.png" alt="Nine of Wands">
-                <div>
-                    <strong>Nine of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes resilience, courage, and persistence.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the Moon in Sagittarius, representing intuition and adaptability.</p>
-                        <p><strong>Combined Interpretation:</strong> The Nine of Wands, aligned with the Moon in Sagittarius, urges you to stay resilient and adaptable in the face of adversity.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="ten-of-wands">Ten of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Moon in Sagittarius</p>
+            </div>
+            <div class="card" id="ten-of-wands">
+                <h3>Ten of Wands</h3>
                 <img src="images/31.png" alt="Ten of Wands">
-                <div>
-                    <strong>Ten of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes burden, responsibility, and hard work.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Saturn in Sagittarius, representing discipline and endurance.</p>
-                        <p><strong>Combined Interpretation:</strong> The Ten of Wands, aligned with Saturn in Sagittarius, urges you to shoulder your responsibilities with discipline and endurance.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="page-of-wands">Page of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Saturn in Sagittarius</p>
+            </div>
+            <div class="card" id="page-of-wands">
+                <h3>Page of Wands</h3>
                 <img src="images/32.png" alt="Page of Wands">
-                <div>
-                    <strong>Page of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes enthusiasm, exploration, and potential.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Earth of Fire, representing grounded enthusiasm.</p>
-                        <p><strong>Combined Interpretation:</strong> The Page of Wands urges you to explore new opportunities with enthusiasm and grounded energy.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="knight-of-wands">Knight of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Earth of Fire</p>
+            </div>
+            <div class="card" id="knight-of-wands">
+                <h3>Knight of Wands</h3>
                 <img src="images/33.png" alt="Knight of Wands">
-                <div>
-                    <strong>Knight of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes action, adventure, and confidence.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Air of Fire, representing dynamic energy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Knight of Wands urges you to take action and embrace adventure with confidence and dynamic energy.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="queen-of-wands">Queen of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Air of Fire</p>
+            </div>
+            <div class="card" id="queen-of-wands">
+                <h3>Queen of Wands</h3>
                 <img src="images/34.png" alt="Queen of Wands">
-                <div>
-                    <strong>Queen of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes warmth, vibrancy, and determination.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Water of Fire, representing emotional passion.</p>
-                        <p><strong>Combined Interpretation:</strong> The Queen of Wands urges you to embrace your passion and determination with warmth and vibrancy.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="king-of-wands">King of Wands</h3>
-        <ul>
-            <li class="card-item">
+                <p>Water of Fire</p>
+            </div>
+            <div class="card" id="king-of-wands">
+                <h3>King of Wands</h3>
                 <img src="images/35.png" alt="King of Wands">
-                <div>
-                    <strong>King of Wands</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes leadership, vision, and honor.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Fire of Fire, representing pure dynamic energy.</p>
-                        <p><strong>Combined Interpretation:</strong> The King of Wands urges you to lead with vision and honor, embracing your dynamic energy.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
+                <p>Fire of Fire</p>
+            </div>
+        </div>
 
         <!-- Cups -->
-        <h2 id="cups">Cups</h2>
-        <div class="suit-menu" id="cups-menu">
-            <ul>
-                <li><a href="#ace-of-cups">Ace of Cups</a></li>
-                <li><a href="#two-of-cups">Two of Cups (Venus in Cancer)</a></li>
-                <li><a href="#three-of-cups">Three of Cups (Mercury in Cancer)</a></li>
-                <li><a href="#four-of-cups">Four of Cups (Moon in Cancer)</a></li>
-                <li><a href="#five-of-cups">Five of Cups (Mars in Scorpio)</a></li>
-                <li><a href="#six-of-cups">Six of Cups (Sun in Scorpio)</a></li>
-                <li><a href="#seven-of-cups">Seven of Cups (Venus in Scorpio)</a></li>
-                <li><a href="#eight-of-cups">Eight of Cups (Saturn in Pisces)</a></li>
-                <li><a href="#nine-of-cups">Nine of Cups (Jupiter in Pisces)</a></li>
-                <li><a href="#ten-of-cups">Ten of Cups (Mars in Pisces)</a></li>
-                <li><a href="#page-of-cups">Page of Cups (Earth of Water)</a></li>
-                <li><a href="#knight-of-cups">Knight of Cups (Air of Water)</a></li>
-                <li><a href="#queen-of-cups">Queen of Cups (Water of Water)</a></li>
-                <li><a href="#king-of-cups">King of Cups (Fire of Water)</a></li>
-            </ul>
-        </div>
-
-        <!-- Cups Cards -->
-        <h3 id="ace-of-cups">Ace of Cups</h3>
-        <ul>
-            <li class="card-item">
+        <h2 id="cups">Cups (Water)</h2>
+        <div class="card-section">
+            <div class="card" id="ace-of-cups">
+                <h3>Ace of Cups</h3>
                 <img src="images/36.png" alt="Ace of Cups">
-                <div>
-                    <strong>Ace of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes emotional fulfillment, love, and new relationships.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the element of Water, representing emotions, intuition, and the subconscious.</p>
-                        <p><strong>Combined Interpretation:</strong> The Ace of Cups, aligned with Water, brings emotional fulfillment and new relationships, encouraging you to embrace love and intuition.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="two-of-cups">Two of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Water</p>
+            </div>
+            <div class="card" id="two-of-cups">
+                <h3>Two of Cups</h3>
                 <img src="images/37.png" alt="Two of Cups">
-                <div>
-                    <strong>Two of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes partnership, unity, and mutual respect.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Venus in Cancer, representing emotional bonds and love.</p>
-                        <p><strong>Combined Interpretation:</strong> The Two of Cups, aligned with Venus in Cancer, urges you to seek partnerships built on mutual respect and emotional bonds.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="three-of-cups">Three of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Venus in Cancer</p>
+            </div>
+            <div class="card" id="three-of-cups">
+                <h3>Three of Cups</h3>
                 <img src="images/38.png" alt="Three of Cups">
-                <div>
-                    <strong>Three of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes celebration, friendship, and community.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mercury in Cancer, representing communication and emotional expression.</p>
-                        <p><strong>Combined Interpretation:</strong> The Three of Cups, aligned with Mercury in Cancer, urges you to celebrate friendships and community, expressing your emotions freely.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="four-of-cups">Four of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mercury in Cancer</p>
+            </div>
+            <div class="card" id="four-of-cups">
+                <h3>Four of Cups</h3>
                 <img src="images/39.png" alt="Four of Cups">
-                <div>
-                    <strong>Four of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes contemplation, reevaluation, and introspection.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the Moon in Cancer, representing inner reflection and emotional awareness.</p>
-                        <p><strong>Combined Interpretation:</strong> The Four of Cups, aligned with the Moon in Cancer, urges you to contemplate and reevaluate your emotions and current situation.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="five-of-cups">Five of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Moon in Cancer</p>
+            </div>
+            <div class="card" id="five-of-cups">
+                <h3>Five of Cups</h3>
                 <img src="images/40.png" alt="Five of Cups">
-                <div>
-                    <strong>Five of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes loss, regret, and emotional challenge.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mars in Scorpio, representing emotional intensity and transformation.</p>
-                        <p><strong>Combined Interpretation:</strong> The Five of Cups, aligned with Mars in Scorpio, urges you to confront and transform emotional challenges and regrets.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="six-of-cups">Six of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mars in Scorpio</p>
+            </div>
+            <div class="card" id="six-of-cups">
+                <h3>Six of Cups</h3>
                 <img src="images/41.png" alt="Six of Cups">
-                <div>
-                    <strong>Six of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes nostalgia, memories, and childhood.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the Sun in Scorpio, representing deep emotional connections and joy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Six of Cups, aligned with the Sun in Scorpio, urges you to reconnect with your past and cherish memories and emotional connections.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="seven-of-cups">Seven of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Sun in Scorpio</p>
+            </div>
+            <div class="card" id="seven-of-cups">
+                <h3>Seven of Cups</h3>
                 <img src="images/42.png" alt="Seven of Cups">
-                <div>
-                    <strong>Seven of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes choices, dreams, and illusion.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Venus in Scorpio, representing emotional complexity and desires.</p>
-                        <p><strong>Combined Interpretation:</strong> The Seven of Cups, aligned with Venus in Scorpio, urges you to evaluate your choices and distinguish between reality and illusion.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="eight-of-cups">Eight of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Venus in Scorpio</p>
+            </div>
+            <div class="card" id="eight-of-cups">
+                <h3>Eight of Cups</h3>
                 <img src="images/43.png" alt="Eight of Cups">
-                <div>
-                    <strong>Eight of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes departure, journey, and change.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Saturn in Pisces, representing emotional discipline and growth.</p>
-                        <p><strong>Combined Interpretation:</strong> The Eight of Cups, aligned with Saturn in Pisces, urges you to embark on a journey of emotional growth and change, leaving behind what no longer serves you.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="nine-of-cups">Nine of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Saturn in Pisces</p>
+            </div>
+            <div class="card" id="nine-of-cups">
+                <h3>Nine of Cups</h3>
                 <img src="images/44.png" alt="Nine of Cups">
-                <div>
-                    <strong>Nine of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes fulfillment, satisfaction, and contentment.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Jupiter in Pisces, representing abundance and spiritual joy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Nine of Cups, aligned with Jupiter in Pisces, urges you to embrace fulfillment and contentment in your emotional and spiritual life.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="ten-of-cups">Ten of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Jupiter in Pisces</p>
+            </div>
+            <div class="card" id="ten-of-cups">
+                <h3>Ten of Cups</h3>
                 <img src="images/45.png" alt="Ten of Cups">
-                <div>
-                    <strong>Ten of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes happiness, harmony, and emotional fulfillment.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mars in Pisces, representing dynamic emotional energy and joy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Ten of Cups, aligned with Mars in Pisces, urges you to embrace happiness and harmony in your emotional and family life.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="page-of-cups">Page of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mars in Pisces</p>
+            </div>
+            <div class="card" id="page-of-cups">
+                <h3>Page of Cups</h3>
                 <img src="images/46.png" alt="Page of Cups">
-                <div>
-                    <strong>Page of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes creativity, intuition, and emotional openness.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Earth of Water, representing grounded emotional energy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Page of Cups urges you to embrace creativity and intuition with emotional openness and grounded energy.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="knight-of-cups">Knight of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Earth of Water</p>
+            </div>
+            <div class="card" id="knight-of-cups">
+                <h3>Knight of Cups</h3>
                 <img src="images/47.png" alt="Knight of Cups">
-                <div>
-                    <strong>Knight of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes romance, charm, and idealism.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Air of Water, representing dynamic emotional expression.</p>
-                        <p><strong>Combined Interpretation:</strong> The Knight of Cups urges you to embrace romance and idealism with charm and dynamic emotional expression.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="queen-of-cups">Queen of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Air of Water</p>
+            </div>
+            <div class="card" id="queen-of-cups">
+                <h3>Queen of Cups</h3>
                 <img src="images/48.png" alt="Queen of Cups">
-                <div>
-                    <strong>Queen of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes compassion, intuition, and emotional depth.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Water of Water, representing pure emotional energy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Queen of Cups urges you to embrace your compassion and intuition with emotional depth and purity.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="king-of-cups">King of Cups</h3>
-        <ul>
-            <li class="card-item">
+                <p>Water of Water</p>
+            </div>
+            <div class="card" id="king-of-cups">
+                <h3>King of Cups</h3>
                 <img src="images/49.png" alt="King of Cups">
-                <div>
-                    <strong>King of Cups</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes emotional balance, control, and generosity.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Fire of Water, representing dynamic emotional leadership.</p>
-                        <p><strong>Combined Interpretation:</strong> The King of Cups urges you to lead with emotional balance and generosity, embracing dynamic emotional energy.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
+                <p>Fire of Water</p>
+            </div>
+        </div>
 
         <!-- Swords -->
-        <h2 id="swords">Swords</h2>
-        <div class="suit-menu" id="swords-menu">
-            <ul>
-                <li><a href="#ace-of-swords">Ace of Swords</a></li>
-                <li><a href="#two-of-swords">Two of Swords (Moon in Libra)</a></li>
-                <li><a href="#three-of-swords">Three of Swords (Saturn in Libra)</a></li>
-                <li><a href="#four-of-swords">Four of Swords (Jupiter in Libra)</a></li>
-                <li><a href="#five-of-swords">Five of Swords (Venus in Aquarius)</a></li>
-                <li><a href="#six-of-swords">Six of Swords (Mercury in Aquarius)</a></li>
-                <li><a href="#seven-of-swords">Seven of Swords (Moon in Aquarius)</a></li>
-                <li><a href="#eight-of-swords">Eight of Swords (Jupiter in Gemini)</a></li>
-                <li><a href="#nine-of-swords">Nine of Swords (Mars in Gemini)</a></li>
-                <li><a href="#ten-of-swords">Ten of Swords (Sun in Gemini)</a></li>
-                <li><a href="#page-of-swords">Page of Swords (Earth of Air)</a></li>
-                <li><a href="#knight-of-swords">Knight of Swords (Air of Air)</a></li>
-                <li><a href="#queen-of-swords">Queen of Swords (Water of Air)</a></li>
-                <li><a href="#king-of-swords">King of Swords (Fire of Air)</a></li>
-            </ul>
-        </div>
-
-        <!-- Swords Cards -->
-        <h3 id="ace-of-swords">Ace of Swords</h3>
-        <ul>
-            <li class="card-item">
+        <h2 id="swords">Swords (Air)</h2>
+        <div class="card-section">
+            <div class="card" id="ace-of-swords">
+                <h3>Ace of Swords</h3>
                 <img src="images/50.png" alt="Ace of Swords">
-                <div>
-                    <strong>Ace of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes clarity, truth, and new ideas.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the element of Air, representing intellect, communication, and insight.</p>
-                        <p><strong>Combined Interpretation:</strong> The Ace of Swords, aligned with Air, brings clarity and new ideas, urging you to embrace truth and intellectual insight.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="two-of-swords">Two of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Air</p>
+            </div>
+            <div class="card" id="two-of-swords">
+                <h3>Two of Swords</h3>
                 <img src="images/51.png" alt="Two of Swords">
-                <div>
-                    <strong>Two of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes decision-making, balance, and indecision.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the Moon in Libra, representing emotional balance and harmony.</p>
-                        <p><strong>Combined Interpretation:</strong> The Two of Swords, aligned with the Moon in Libra, urges you to seek emotional balance and make decisions with harmony and clarity.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="three-of-swords">Three of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Moon in Libra</p>
+            </div>
+            <div class="card" id="three-of-swords">
+                <h3>Three of Swords</h3>
                 <img src="images/52.png" alt="Three of Swords">
-                <div>
-                    <strong>Three of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes heartbreak, sorrow, and emotional pain.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Saturn in Libra, representing emotional challenges and restrictions.</p>
-                        <p><strong>Combined Interpretation:</strong> The Three of Swords, aligned with Saturn in Libra, urges you to confront and heal from emotional pain and heartbreak.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="four-of-swords">Four of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Saturn in Libra</p>
+            </div>
+            <div class="card" id="four-of-swords">
+                <h3>Four of Swords</h3>
                 <img src="images/53.png" alt="Four of Swords">
-                <div>
-                    <strong>Four of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes rest, recuperation, and contemplation.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Jupiter in Libra, representing growth and healing.</p>
-                        <p><strong>Combined Interpretation:</strong> The Four of Swords, aligned with Jupiter in Libra, urges you to take time for rest and contemplation to promote healing and growth.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="five-of-swords">Five of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Jupiter in Libra</p>
+            </div>
+            <div class="card" id="five-of-swords">
+                <h3>Five of Swords</h3>
                 <img src="images/54.png" alt="Five of Swords">
-                <div>
-                    <strong>Five of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes conflict, defeat, and betrayal.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Venus in Aquarius, representing emotional detachment and challenges.</p>
-                        <p><strong>Combined Interpretation:</strong> The Five of Swords, aligned with Venus in Aquarius, urges you to confront conflicts and emotional challenges with detachment and clarity.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="six-of-swords">Six of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Venus in Aquarius</p>
+            </div>
+            <div class="card" id="six-of-swords">
+                <h3>Six of Swords</h3>
                 <img src="images/55.png" alt="Six of Swords">
-                <div>
-                    <strong>Six of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes transition, recovery, and moving on.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mercury in Aquarius, representing intellectual growth and change.</p>
-                        <p><strong>Combined Interpretation:</strong> The Six of Swords, aligned with Mercury in Aquarius, urges you to embrace transition and intellectual growth as you move on from past challenges.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="seven-of-swords">Seven of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mercury in Aquarius</p>
+            </div>
+            <div class="card" id="seven-of-swords">
+                <h3>Seven of Swords</h3>
                 <img src="images/56.png" alt="Seven of Swords">
-                <div>
-                    <strong>Seven of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes strategy, deception, and cunning.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the Moon in Aquarius, representing intuition and strategic thinking.</p>
-                        <p><strong>Combined Interpretation:</strong> The Seven of Swords, aligned with the Moon in Aquarius, urges you to use your intuition and strategic thinking to navigate challenges and avoid deception.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="eight-of-swords">Eight of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Moon in Aquarius</p>
+            </div>
+            <div class="card" id="eight-of-swords">
+                <h3>Eight of Swords</h3>
                 <img src="images/57.png" alt="Eight of Swords">
-                <div>
-                    <strong>Eight of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes restriction, limitation, and fear.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Jupiter in Gemini, representing mental challenges and growth.</p>
-                        <p><strong>Combined Interpretation:</strong> The Eight of Swords, aligned with Jupiter in Gemini, urges you to confront your fears and limitations to achieve mental growth and freedom.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="nine-of-swords">Nine of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Jupiter in Gemini</p>
+            </div>
+            <div class="card" id="nine-of-swords">
+                <h3>Nine of Swords</h3>
                 <img src="images/58.png" alt="Nine of Swords">
-                <div>
-                    <strong>Nine of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes anxiety, worry, and nightmares.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mars in Gemini, representing mental conflict and tension.</p>
-                        <p><strong>Combined Interpretation:</strong> The Nine of Swords, aligned with Mars in Gemini, urges you to confront your anxieties and mental conflicts to find peace and resolution.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="ten-of-swords">Ten of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mars in Gemini</p>
+            </div>
+            <div class="card" id="ten-of-swords">
+                <h3>Ten of Swords</h3>
                 <img src="images/59.png" alt="Ten of Swords">
-                <div>
-                    <strong>Ten of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes betrayal, defeat, and painful endings.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the Sun in Gemini, representing clarity and finality.</p>
-                        <p><strong>Combined Interpretation:</strong> The Ten of Swords, aligned with the Sun in Gemini, urges you to confront and accept painful endings to achieve clarity and closure.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="page-of-swords">Page of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Sun in Gemini</p>
+            </div>
+            <div class="card" id="page-of-swords">
+                <h3>Page of Swords</h3>
                 <img src="images/60.png" alt="Page of Swords">
-                <div>
-                    <strong>Page of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes curiosity, communication, and new ideas.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Earth of Air, representing grounded intellect.</p>
-                        <p><strong>Combined Interpretation:</strong> The Page of Swords urges you to embrace curiosity and new ideas with grounded intellect and clear communication.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="knight-of-swords">Knight of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Earth of Air</p>
+            </div>
+            <div class="card" id="knight-of-swords">
+                <h3>Knight of Swords</h3>
                 <img src="images/61.png" alt="Knight of Swords">
-                <div>
-                    <strong>Knight of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes action, intellect, and assertiveness.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Air of Air, representing dynamic mental energy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Knight of Swords urges you to take action and assert your ideas with dynamic mental energy and clarity.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="queen-of-swords">Queen of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Air of Air</p>
+            </div>
+            <div class="card" id="queen-of-swords">
+                <h3>Queen of Swords</h3>
                 <img src="images/62.png" alt="Queen of Swords">
-                <div>
-                    <strong>Queen of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes wisdom, clarity, and independence.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Water of Air, representing emotional intelligence.</p>
-                        <p><strong>Combined Interpretation:</strong> The Queen of Swords urges you to embrace wisdom and clarity with emotional intelligence and independence.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="king-of-swords">King of Swords</h3>
-        <ul>
-            <li class="card-item">
+                <p>Water of Air</p>
+            </div>
+            <div class="card" id="king-of-swords">
+                <h3>King of Swords</h3>
                 <img src="images/63.png" alt="King of Swords">
-                <div>
-                    <strong>King of Swords</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes authority, intellect, and truth.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Fire of Air, representing dynamic intellectual leadership.</p>
-                        <p><strong>Combined Interpretation:</strong> The King of Swords urges you to lead with authority and intellect, embracing truth and dynamic mental energy.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
+                <p>Fire of Air</p>
+            </div>
+        </div>
 
         <!-- Pentacles -->
-        <h2 id="pentacles">Pentacles</h2>
-        <div class="suit-menu" id="pentacles-menu">
-            <ul>
-                <li><a href="#ace-of-pentacles">Ace of Pentacles</a></li>
-                <li><a href="#two-of-pentacles">Two of Pentacles (Jupiter in Capricorn)</a></li>
-                <li><a href="#three-of-pentacles">Three of Pentacles (Mars in Capricorn)</a></li>
-                <li><a href="#four-of-pentacles">Four of Pentacles (Sun in Capricorn)</a></li>
-                <li><a href="#five-of-pentacles">Five of Pentacles (Mercury in Taurus)</a></li>
-                <li><a href="#six-of-pentacles">Six of Pentacles (Moon in Taurus)</a></li>
-                <li><a href="#seven-of-pentacles">Seven of Pentacles (Saturn in Taurus)</a></li>
-                <li><a href="#eight-of-pentacles">Eight of Pentacles (Sun in Virgo)</a></li>
-                <li><a href="#nine-of-pentacles">Nine of Pentacles (Venus in Virgo)</a></li>
-                <li><a href="#ten-of-pentacles">Ten of Pentacles (Mercury in Virgo)</a></li>
-                <li><a href="#page-of-pentacles">Page of Pentacles (Earth of Earth)</a></li>
-                <li><a href="#knight-of-pentacles">Knight of Pentacles (Air of Earth)</a></li>
-                <li><a href="#queen-of-pentacles">Queen of Pentacles (Water of Earth)</a></li>
-                <li><a href="#king-of-pentacles">King of Pentacles (Fire of Earth)</a></li>
-            </ul>
-        </div>
-
-        <!-- Pentacles Cards -->
-        <h3 id="ace-of-pentacles">Ace of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+        <h2 id="pentacles">Pentacles (Earth)</h2>
+        <div class="card-section">
+            <div class="card" id="ace-of-pentacles">
+                <h3>Ace of Pentacles</h3>
                 <img src="images/64.png" alt="Ace of Pentacles">
-                <div>
-                    <strong>Ace of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes new opportunities, prosperity, and material beginnings.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the element of Earth, representing stability, practicality, and growth.</p>
-                        <p><strong>Combined Interpretation:</strong> The Ace of Pentacles, aligned with Earth, brings new opportunities and prosperity, urging you to embrace material beginnings with stability and practicality.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="two-of-pentacles">Two of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Earth</p>
+            </div>
+            <div class="card" id="two-of-pentacles">
+                <h3>Two of Pentacles</h3>
                 <img src="images/65.png" alt="Two of Pentacles">
-                <div>
-                    <strong>Two of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes balance, adaptability, and juggling priorities.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Jupiter in Capricorn, representing growth and practical expansion.</p>
-                        <p><strong>Combined Interpretation:</strong> The Two of Pentacles, aligned with Jupiter in Capricorn, urges you to maintain balance and adaptability while juggling priorities and embracing practical growth.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="three-of-pentacles">Three of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Jupiter in Capricorn</p>
+            </div>
+            <div class="card" id="three-of-pentacles">
+                <h3>Three of Pentacles</h3>
                 <img src="images/66.png" alt="Three of Pentacles">
-                <div>
-                    <strong>Three of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes teamwork, collaboration, and skill development.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mars in Capricorn, representing practical action and discipline.</p>
-                        <p><strong>Combined Interpretation:</strong> The Three of Pentacles, aligned with Mars in Capricorn, urges you to work collaboratively and develop your skills with practical action and discipline.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="four-of-pentacles">Four of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mars in Capricorn</p>
+            </div>
+            <div class="card" id="four-of-pentacles">
+                <h3>Four of Pentacles</h3>
                 <img src="images/67.png" alt="Four of Pentacles">
-                <div>
-                    <strong>Four of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes stability, security, and material control.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the Sun in Capricorn, representing practical success and stability.</p>
-                        <p><strong>Combined Interpretation:</strong> The Four of Pentacles, aligned with the Sun in Capricorn, urges you to seek stability and security in your material pursuits while maintaining practical control and success.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="five-of-pentacles">Five of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Sun in Capricorn</p>
+            </div>
+            <div class="card" id="five-of-pentacles">
+                <h3>Five of Pentacles</h3>
                 <img src="images/68.png" alt="Five of Pentacles">
-                <div>
-                    <strong>Five of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes hardship, struggle, and financial challenges.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mercury in Taurus, representing practical communication and challenges.</p>
-                        <p><strong>Combined Interpretation:</strong> The Five of Pentacles, aligned with Mercury in Taurus, urges you to confront and communicate your financial challenges and struggles with practicality and resilience.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="six-of-pentacles">Six of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mercury in Taurus</p>
+            </div>
+            <div class="card" id="six-of-pentacles">
+                <h3>Six of Pentacles</h3>
                 <img src="images/69.png" alt="Six of Pentacles">
-                <div>
-                    <strong>Six of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes generosity, sharing, and balance in giving and receiving.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the Moon in Taurus, representing emotional generosity and stability.</p>
-                        <p><strong>Combined Interpretation:</strong> The Six of Pentacles, aligned with the Moon in Taurus, urges you to embrace generosity and balance in giving and receiving, fostering emotional and material stability.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="seven-of-pentacles">Seven of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Moon in Taurus</p>
+            </div>
+            <div class="card" id="seven-of-pentacles">
+                <h3>Seven of Pentacles</h3>
                 <img src="images/70.png" alt="Seven of Pentacles">
-                <div>
-                    <strong>Seven of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes patience, evaluation, and long-term planning.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Saturn in Taurus, representing discipline and patience in material pursuits.</p>
-                        <p><strong>Combined Interpretation:</strong> The Seven of Pentacles, aligned with Saturn in Taurus, urges you to practice patience and discipline in evaluating your progress and planning for long-term success.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="eight-of-pentacles">Eight of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Saturn in Taurus</p>
+            </div>
+            <div class="card" id="eight-of-pentacles">
+                <h3>Eight of Pentacles</h3>
                 <img src="images/71.png" alt="Eight of Pentacles">
-                <div>
-                    <strong>Eight of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes diligence, craftsmanship, and hard work.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with the Sun in Virgo, representing practical perfection and dedication.</p>
-                        <p><strong>Combined Interpretation:</strong> The Eight of Pentacles, aligned with the Sun in Virgo, urges you to embrace diligence and hard work in your pursuits, striving for practical perfection and dedication.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="nine-of-pentacles">Nine of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Sun in Virgo</p>
+            </div>
+            <div class="card" id="nine-of-pentacles">
+                <h3>Nine of Pentacles</h3>
                 <img src="images/72.png" alt="Nine of Pentacles">
-                <div>
-                    <strong>Nine of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes self-sufficiency, luxury, and financial independence.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Venus in Virgo, representing practical beauty and enjoyment.</p>
-                        <p><strong>Combined Interpretation:</strong> The Nine of Pentacles, aligned with Venus in Virgo, urges you to embrace self-sufficiency and enjoy the practical beauty and luxury of your achievements.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="ten-of-pentacles">Ten of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Venus in Virgo</p>
+            </div>
+            <div class="card" id="ten-of-pentacles">
+                <h3>Ten of Pentacles</h3>
                 <img src="images/73.png" alt="Ten of Pentacles">
-                <div>
-                    <strong>Ten of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes legacy, inheritance, and family wealth.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Mercury in Virgo, representing practical communication and legacy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Ten of Pentacles, aligned with Mercury in Virgo, urges you to focus on your legacy and communicate your practical values and wealth to future generations.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="page-of-pentacles">Page of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Mercury in Virgo</p>
+            </div>
+            <div class="card" id="page-of-pentacles">
+                <h3>Page of Pentacles</h3>
                 <img src="images/74.png" alt="Page of Pentacles">
-                <div>
-                    <strong>Page of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes ambition, learning, and new opportunities.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Earth of Earth, representing practical ambition and potential.</p>
-                        <p><strong>Combined Interpretation:</strong> The Page of Pentacles urges you to embrace new opportunities and practical learning with ambition and potential.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="knight-of-pentacles">Knight of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Earth of Earth</p>
+            </div>
+            <div class="card" id="knight-of-pentacles">
+                <h3>Knight of Pentacles</h3>
                 <img src="images/75.png" alt="Knight of Pentacles">
-                <div>
-                    <strong>Knight of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes reliability, patience, and hard work.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Air of Earth, representing dynamic practical energy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Knight of Pentacles urges you to embrace reliability and patience in your hard work, combining dynamic practical energy with dedication.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="queen-of-pentacles">Queen of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Air of Earth</p>
+            </div>
+            <div class="card" id="queen-of-pentacles">
+                <h3>Queen of Pentacles</h3>
                 <img src="images/76.png" alt="Queen of Pentacles">
-                <div>
-                    <strong>Queen of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes nurturing, practicality, and abundance.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Water of Earth, representing emotional practical energy.</p>
-                        <p><strong>Combined Interpretation:</strong> The Queen of Pentacles urges you to embrace nurturing and practicality in your pursuit of abundance, combining emotional and practical energy.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <h3 id="king-of-pentacles">King of Pentacles</h3>
-        <ul>
-            <li class="card-item">
+                <p>Water of Earth</p>
+            </div>
+            <div class="card" id="king-of-pentacles">
+                <h3>King of Pentacles</h3>
                 <img src="images/77.png" alt="King of Pentacles">
-                <div>
-                    <strong>King of Pentacles</strong>
-                    <div class="card-details">
-                        <p><strong>Card Interpretation:</strong> Symbolizes wealth, stability, and practicality.</p>
-                        <p><strong>Astrological Interpretation:</strong> Associated with Fire of Earth, representing dynamic practical leadership.</p>
-                        <p><strong>Combined Interpretation:</strong> The King of Pentacles urges you to lead with wealth and stability, embracing dynamic practical energy in your pursuits.</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
+                <p>Fire of Earth</p>
+            </div>
+        </div>
     </div>
 
     <!-- Back to Top Button -->
@@ -1353,3 +550,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
