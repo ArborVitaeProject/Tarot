@@ -272,6 +272,12 @@ nav ul li a:focus {
         display: block;
     }
 
+    nav ul .close-menu {
+        font-size: 32px; /* Increase size of close menu 'x' */
+        top: 15px;
+        right: 25px;
+    }
+
     nav ul li {
         display: block;
         width: 100%;
@@ -295,10 +301,12 @@ nav ul li a:focus {
     }
 
     .card {
-        width: 90%;
+        width: 80%;
+        margin: 10px auto;
     }
 
     #back-to-top {
         line-height: 50px;
+        text-align: center;
     }
 }
