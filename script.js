@@ -20,10 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Toggle the main menu
     const menuToggle = document.querySelector('.menu-toggle');
+    const menuClose = document.querySelector('.menu-close');
     const menu = document.querySelector('nav ul');
 
     menuToggle.addEventListener('click', () => {
         menu.classList.toggle('open');
+        menuToggle.style.display = 'none';
+        menuClose.style.display = 'block';
+    });
+
+    menuClose.addEventListener('click', () => {
+        menu.classList.remove('open');
+        menuToggle.style.display = 'block';
+        menuClose.style.display = 'none';
     });
 
     // Toggle submenus
@@ -66,6 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Close main menu for mobile
                 if (window.innerWidth <= 768) {
                     menu.classList.remove('open');
+                    menuToggle.style.display = 'block';
+                    menuClose.style.display = 'none';
                 }
             }
         });

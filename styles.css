@@ -19,9 +19,10 @@ header h1 {
 
 nav {
     text-align: center;
+    position: relative;
 }
 
-nav button.menu-toggle {
+nav button.menu-toggle, nav button.menu-close {
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -29,6 +30,7 @@ nav button.menu-toggle {
     cursor: pointer;
     width: 100%;
     text-align: center;
+    font-size: 1.2em;
 }
 
 nav ul {
