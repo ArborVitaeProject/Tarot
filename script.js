@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const backToTopButton = document.getElementById('back-to-top');
-    const scrollOffsetDesktop = 850; // Adjust scroll offset for better view on desktop
-    const scrollOffsetMobile = 50; // Adjust scroll offset for better view on mobile
+    const scrollOffsetDesktop = 830; // Adjust scroll offset for better view on desktop
+    const scrollOffsetMobile = -70; // Adjust scroll offset for better view on mobile
 
     // Show or hide the back-to-top button
     window.onscroll = () => {
@@ -20,19 +20,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Toggle the main menu
     const menuToggle = document.querySelector('.menu-toggle');
-    const menuClose = document.querySelector('.menu-close');
     const menu = document.querySelector('nav ul');
+    const closeMenuButton = document.querySelector('.close-menu');
 
     menuToggle.addEventListener('click', () => {
         menu.classList.toggle('open');
         menuToggle.style.display = 'none';
-        menuClose.style.display = 'block';
     });
 
-    menuClose.addEventListener('click', () => {
+    closeMenuButton.addEventListener('click', () => {
         menu.classList.remove('open');
         menuToggle.style.display = 'block';
-        menuClose.style.display = 'none';
     });
 
     // Toggle submenus
@@ -76,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (window.innerWidth <= 768) {
                     menu.classList.remove('open');
                     menuToggle.style.display = 'block';
-                    menuClose.style.display = 'none';
                 }
             }
         });
